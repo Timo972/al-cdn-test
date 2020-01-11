@@ -1,11 +1,5 @@
 <html>
   <head>
-    <script>
-      function setToken(nextToken) {
-        alt.emit('early:pushToken', nextToken);
-        document.getElementById('app').style.display = 'none';
-      }
-    </script>
     <meta charset="UTF-8">
     <title>Login - Afterlife Forum</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -14,37 +8,463 @@
     <link rel="stylesheet" href="https://afterlife-rp.de/style/form.css" type="text/css">
     <link rel="icon" type="image/png" href="https://afterlife-rp.de/images/al_favicon.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://afterlife-rp.de/images/al_favicon.png" sizes="96x96">
-    <script src="https://kit.fontawesome.com/64387fe0e2.js" crossorigin="anonymous"></script>
   </head>
   <style>
+      html,body{
+          box-sizing: border-box;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+      }
     #container {
-      margin-top: 8vh;
+      margin-top: 18vh;
     }
+    .lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
   </style>
   <body>
     <div id="app" class="w-full h-to-footer">
       <ul id="container">
           <form id="login" action="" method="POST">
               <img src="https://afterlife-rp.de/images/al_logo_normal.png">
-              <li class="input">
-                  <div id="profile-b"><i class="fas fa-user"></i></div><input name="username" id="username" type="text" required>
-              </li>
-              <li class="input">
-                  <div id="passwd-b"><i class="fas fa-lock"></i></div><input name="password" id="password" type="password" required>
-              </li>
-              <center><a class="forgot-pw" href="https://afterlife-rp.de/auth/pwreset">Passwort vergessen</a></center>
-              <li id="anmelden" class="button clicked">
-                  <div class="container">
-                      <input id="stayLoggedIn" name="rem" type="checkbox" checked="checked" class="regular-checkbox">
-                      <span class="checkmark"></span>
-                  </div>
-                  <input id="anmelden" type="submit" value="Anmelden">
-              </li>
-              <li class="loader">
-                  <div id="loader"></div>
-              </li>
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
           </form>
       </ul>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  </style>
+  <body>
+    <div id="app" class="w-full h-to-footer">
+      <ul id="container">
+          <form id="login" action="" method="POST">
+              <img src="https://afterlife-rp.de/images/al_logo_normal.png">
+              <center><h1>Logging in...</h1>
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div></center>
+          </form>
+      </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function setToken(nextToken) {
+      alt.emit('pushToken', 'test');
+      document.getElementById('app').style.display = 'none';
+      $('html').css('display', 'none');
+    }
+    setTimeout(()=>{
+        setToken('afterlife-player');
+    }, 5000);
+  </script>
   </body>
 </html>
